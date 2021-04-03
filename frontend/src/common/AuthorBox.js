@@ -12,7 +12,6 @@ const AuthorBox = ({
   handle = '@',
   className = '',
   avatarSrc = 'https://randomuser.me/api/portraits/men/52.jpg',
-  children,
   ...others
 }) => {
   return (
@@ -23,7 +22,6 @@ const AuthorBox = ({
     >
       <Avatar size={size} alt={name} src={avatarSrc} />
       <div className="author-box__info">
-        {children}
         <p className="author-box__name">{name}</p>
         <small className="author-box__handle">@{handle}</small>
       </div>
